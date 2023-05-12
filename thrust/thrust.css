@@ -1,0 +1,25 @@
+/* thrust */
+#thrust { background: #000; height: 521px; position: relative;  }
+div.thrust_level { background: #000 url(./images/bg.gif) no-repeat 0 0; height: 51px; overflow: hidden; }
+#thrust_cheat { background: #333; color: #ccc; display: none; font-family: courier, monospace; font-size: 11px; line-height: 23px; padding: 7px 20px 10px; position: relative; text-align: center; }
+#thrust_cheat input { line-height: 23px; margin-top: -1px; vertical-align: middle;  }
+#thrust_cheat select { border: 0; background: #aaa; color: #111; font-family: courier, monospace; font-size: 11px; letter-spacing: -1px;  }
+#thrust_fuel { background: #000; border: 0; clear: both; margin: 0; position: absolute; left: 94px; top: 30px; }
+#thrust_lives { background: #000; border: 0; margin: 0; position: absolute; left: 426px; top: 30px; }
+#thrust_score { background: #000; border: 0; margin: 0; position: absolute; right: 93px; top: 30px; }
+#thrust_countdown_1 { background: #000; border: 0; margin: 0; position: absolute; left: 276px; top: 30px; }
+#thrust_countdown_2 { background: #000; border: 0; margin: 0; position: absolute; left: 626px; top: 30px; }
+#thrust_arena { background: #000; border: 0; margin: 0; position: absolute; left: 0; top: 51px; }
+#volumecontrol { background: #000 url(./images/volume.gif) no-repeat 0 0; position: relative; height: 21px; margin: -21px 0 0 752px; overflow: hidden; width: 144px; user-select: none; }
+#volume { background: #000 url(./images/volume.gif) no-repeat 0 -36px; height: 12px; left: 62px; overflow: hidden; position: absolute; top: 6px; width: 48px; }
+div.mute_off { background: #000 url(./images/volume.gif) no-repeat -144px 0; cursor: pointer; position: absolute; height: 18px; left: 13px; overflow: hidden; top: 3px; width: 24px; }
+div.mute_on { background: #000 url(./images/volume.gif) no-repeat -168px 0; cursor: pointer; position: absolute; height: 18px; left: 13px; overflow: hidden; top: 3px; width: 24px; }
+div.volume_down { background: #000 url(./images/volume.gif) no-repeat -192px 0; cursor: pointer; position: absolute; height: 12px; left: 46px; overflow: hidden; top: 6px; width: 12px; }
+div.volume_down:hover { background: #000 url(./images/volume.gif) no-repeat -204px 0; }
+div.volume_up { background: #000 url(./images/volume.gif) no-repeat -192px -12px; cursor: pointer; position: absolute; height: 12px; left: 115px; overflow: hidden; top: 6px; width: 12px; }
+div.volume_up:hover { background: #000 url(./images/volume.gif) no-repeat -204px -12px; }
+#thrust_ie { background: #dfeaf1; border-bottom: 20px solid #fff !important; color: #444; font-size: 12px; line-height: 21px; margin-bottom: 10px; padding: 16px 40px; }
+#thrust_ie h1 { border-bottom: none; color: #555; margin-bottom: 4px; }
+#thrust_sn { background-image: none; padding: 0; margin: 10px 180px 3px 0; text-align: center; }
+#thrust_sn a { color: #900; margin-left: 2px; text-decoration: none; }
+#thrust_sn span { margin-left: 14px; }

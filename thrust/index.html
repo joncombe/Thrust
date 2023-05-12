@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thrust</title>
+    <link rel="stylesheet" href="thrust.css" type="text/css" />
+  </head>
+  <body>
+    <div style="margin-top: 21px; width: 960px">
+      <div id="volumecontrol">
+        <div class="mute_off" onclick="oSound.ToggleMute(this)">&nbsp;</div>
+        <div class="volume_down" onclick="oSound.VolumeDown()">&nbsp;</div>
+        <div id="volume">&nbsp;</div>
+        <div class="volume_up" onclick="oSound.VolumeUp()">&nbsp;</div>
+      </div>
+      <div id="thrust">
+        <div class="thrust_level">
+          <canvas id="thrust_fuel" width="150" height="12"></canvas>
+          <canvas id="thrust_countdown_1" width="40" height="12"></canvas>
+          <canvas id="thrust_lives" width="90" height="12"></canvas>
+          <canvas id="thrust_countdown_2" width="40" height="12"></canvas>
+          <canvas id="thrust_score" width="200" height="12"></canvas>
+        </div>
+        <canvas id="thrust_arena" width="960" height="470"></canvas>
+      </div>
+      <div id="thrust_cheat">
+        Level:<select
+          id="thrust_level"
+          onchange="Cheat('level', this.value, event)"
+        >
+          <option value="0">Jump to...</option>
+          <option value="1">&nbsp;1</option>
+          <option value="2">&nbsp;2</option>
+          <option value="3">&nbsp;3</option>
+          <option value="4">&nbsp;4</option>
+          <option value="5">&nbsp;5</option>
+          <option value="6">&nbsp;6</option>
+          <option value="7">&nbsp;7 (reverse gravity)</option>
+          <option value="8">&nbsp;8</option>
+          <option value="9">&nbsp;9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13 (normal gravity, invisble landscape)</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19 (reverse gravity, invisble landscape)</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+        </select>
+        &nbsp; &nbsp; Tracers:<input
+          type="checkbox"
+          onclick="Cheat('tracers', this)"
+          id="thrust_tracers"
+        />
+        &nbsp; &nbsp; Unlimited Fuel:<input
+          type="checkbox"
+          onclick="Cheat('fuel', this)"
+          id="thrust_unlimfuel"
+        />
+        &nbsp; &nbsp; Unlimited Lives:<input
+          type="checkbox"
+          onclick="Cheat('lives', this)"
+          id="thrust_unlimlives"
+        />
+      </div>
+    </div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="excanvas.js"></script>
+    <script type="text/javascript" src="jookie.js"></script>
+    <script type="text/javascript" src="classArena.js"></script>
+    <script type="text/javascript" src="classBlackHole.js"></script>
+    <script type="text/javascript" src="classBullet.js"></script>
+    <script type="text/javascript" src="classDoor.js"></script>
+    <script type="text/javascript" src="classEnemy.js"></script>
+    <script type="text/javascript" src="classExplosion.js"></script>
+    <script type="text/javascript" src="classFuelTank.js"></script>
+    <script type="text/javascript" src="classGame.js"></script>
+    <script type="text/javascript" src="classPod.js"></script>
+    <script type="text/javascript" src="classReactor.js"></script>
+    <script type="text/javascript" src="classShip.js"></script>
+    <script type="text/javascript" src="classSound.js"></script>
+    <script type="text/javascript" src="classText.js"></script>
+    <script type="text/javascript" src="thrust.js"></script>
+  </body>
+</html>
